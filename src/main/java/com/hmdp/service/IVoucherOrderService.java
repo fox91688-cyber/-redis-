@@ -1,7 +1,12 @@
 package com.hmdp.service;
 
+import com.hmdp.dto.Result;
+import com.hmdp.entity.SeckillVoucher;
 import com.hmdp.entity.VoucherOrder;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.hmdp.utils.UserHolder;
+
+import java.time.LocalDateTime;
 
 /**
  * <p>
@@ -12,5 +17,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2021-12-22
  */
 public interface IVoucherOrderService extends IService<VoucherOrder> {
+    public Result seckillVoucher(Long voucherId);
 
 }
