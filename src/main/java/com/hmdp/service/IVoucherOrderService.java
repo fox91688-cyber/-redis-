@@ -18,5 +18,7 @@ import java.time.LocalDateTime;
  */
 public interface IVoucherOrderService extends IService<VoucherOrder> {
     public Result seckillVoucher(Long voucherId);
+    public void createVoucherOrder(VoucherOrder voucherOrder);
+
 
 }
